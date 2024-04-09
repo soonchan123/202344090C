@@ -2,9 +2,13 @@
 
 int main()
 {
-    int x;
-    int sum;
+    int x=1;
+    int sum=0;
+    int n;
     
+    printf("n : ");
+    scanf("%d", &n);
+
     while(1)
     {
         if(x % 2 == 0)
@@ -12,10 +16,12 @@ int main()
             sum += x;
         }
         x++;
-        if(x=1, x<=10, x++)
+        if(x>n)
         {
-            sum += x;
             break;
         }
     }
+    printf("%d부터 %d까지의 짝수의 합 : %d\n",1,n,sum);
+
+    return 0;
 }
